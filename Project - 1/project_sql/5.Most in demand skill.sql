@@ -8,9 +8,9 @@ What are the most optimal skills to learn(i.e. the most in demand and highest pa
 
 WITH skill_demand AS (
     SELECT 
-        skills_dim.skill_id, -- Changed to match skills_dim table
+        skills_dim.skill_id, 
         skills,
-        COUNT(skills_job_dim.job_id) AS demand_count -- Count job_id for clarity
+        COUNT(skills_job_dim.job_id) AS demand_count 
     FROM job_postings_fact
     INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
     INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
@@ -20,9 +20,9 @@ WITH skill_demand AS (
         AND job_work_from_home = true 
     GROUP BY 
         skills_dim.skill_id, 
-        skills -- Added skills here
+        skills 
 ),
-average_salary AS ( -- Removed the 'WITH' keyword
+average_salary AS (
     SELECT 
         skills_dim.skill_id,
         skills,
@@ -35,7 +35,7 @@ average_salary AS ( -- Removed the 'WITH' keyword
         AND salary_year_avg IS NOT NULL
     GROUP BY 
         skills_dim.skill_id,
-        skills -- Removed trailing comma and added skills
+        skills
 )
 
 SELECT
