@@ -1,4 +1,4 @@
-# 🚀 The Data-Driven Path to Remote Success: 2024-2026 Analysis
+# 🚀 The Data-Driven Path to Remote Success: 2023-2025 Analysis
 
 Welcome! This repository is the result of a "data curiosity" project. I wanted to stop guessing about which skills matter and let the **raw data** tell the story. By analyzing thousands of remote job postings, I've mapped out exactly where the high-paying opportunities live.
 
