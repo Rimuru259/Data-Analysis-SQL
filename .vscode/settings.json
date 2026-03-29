@@ -6,7 +6,7 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "name": "postgres",
+            "name": "sql_cousre",
             "database": "sql_cousre",
             "username": "postgres"
         }
